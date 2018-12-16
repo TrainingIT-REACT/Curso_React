@@ -4,14 +4,6 @@ const path = require('path');
 const inquirer = require('inquirer');
 const glob = require("glob");
 
-// Comprobamos si la carpeta node_modules existe, si no ejecutamos bootstrap
-if (!fs.existsSync('./node_modules')) {
-  console.log("Instalando liberías");
-  // Utilizamos NPX porque lerna puede no estar instalado
-  cp.execFileSync("npx", ["lerna", "bootstrap"], { stdio: "inherit" });
-  console.log("Instalación finalizada!");
-}
-
 // Buscamos todos los ejemplos disponibles
 glob("ejemplos/**/package.json", {}, (err, files) => {
   if (err) {

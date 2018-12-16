@@ -5,9 +5,10 @@ Para comenzar a utilizar los ejemplos, debes de tener instaladas las siguientes 
 * [NodeJS](https://nodejs.org/es/)
 * [Yarn](https://yarnpkg.com/es-ES/)
 
-Una vez que tengas instalada ambas, sólo tienes que ejecutar el siguiente código:
+Una vez que tengas instalada ambas, sólo tienes que ejecutar estos comandos:
 
 ```
+yarn install
 yarn start
 ```
 
