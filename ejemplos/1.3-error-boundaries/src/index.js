@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import Title from "./Title";
 import ErrorBoundary from "./ErrorBoundary";
 
-import "./styles.css";
+import "./index.css";
 
 // Estado inicial
 const initialState = {
