@@ -7,6 +7,12 @@ import ErrorBoundary from "./ErrorBoundary";
 
 import "./styles.css";
 
+// Estado inicial
+const initialState = {
+  arr: ["hola!"]
+};
+
+// Applicación básica
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -16,10 +22,8 @@ class App extends React.Component {
     this.onClickError = this.onClickError.bind(this);
     this.onReset = this.onReset.bind(this);
 
-    // Iniciamos el array en el estado
-    this.state = {
-      arr: ["hola!"]
-    };
+    // Iniciamos el estado con un array con contenido
+    this.state = initialState;
   }
 
   // Actualiza el estado con un valor válido
@@ -27,19 +31,22 @@ class App extends React.Component {
     this.setState({ arr: ["qué tal?"] });
   }
 
-  // Actualiza
+  // Actualiza el estado provocando un error en Title
   onClickError(e) {
     this.setState({ arr: [] });
   }
 
+  // Vuelve el estado al array inicial
   onReset() {
-    this.setState({ arr: ["hi"] });
+    this.setState(initialState);
   }
 
   render() {
     return (
       <div className="App">
+        {/* El primer ErrorBoundary engloba toda la app */}
         <ErrorBoundary onReset={this.onReset} message="Ops! Algo ha salido mal">
+          {/* Este ErrorBoundary sólo encapsula a Title */}
           <ErrorBoundary
             onReset={this.onReset}
             message="Ops! Algo ha salido mal en Title"
