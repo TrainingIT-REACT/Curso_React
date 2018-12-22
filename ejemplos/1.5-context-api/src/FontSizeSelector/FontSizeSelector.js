@@ -11,8 +11,9 @@ class FontSizeSelector extends React.Component {
         return Object.keys(fontSizes).map(size => {
           const value = fontSizes[size];
           const css = `button ${value === fontSize ? 'button-primary' : ''}`;
-          return <button key={size} onClick={ () => updateFontSize(value)} className={css}>
-            { size }
+          return <button key={size} onClick={ () => updateFontSize(value)}
+            className={css} style={{fontSize: `${value}px`}}>
+            A
           </button>
         });
       }}

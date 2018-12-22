@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 // Contexto
-import { AccessibilityContext } from './contexts/Accesibility';
+import { AccessibilityContext, fontSizes } from './contexts/Accesibility';
 
 // Componentes
 import Definition from './Definition';
@@ -20,7 +20,7 @@ class App extends React.Component {
 
     // El estado se corresponde con el Contexto:
     this.state = {
-      fontSize: 16,
+      fontSize: fontSizes.medium,
       updateFontSize: this.updateFontSize,
     };
   }
