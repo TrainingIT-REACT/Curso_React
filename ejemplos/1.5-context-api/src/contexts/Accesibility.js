@@ -8,6 +8,6 @@ export const fontSizes = {
 
 // Creamos el contexto para gestionar el tamaño de la fuente de letra
 export const AccessibilityContext = createContext({
-  fontSize: 18,
+  fontSize: fontSizes.medium,
   updateFontSize: () => {}
 });
