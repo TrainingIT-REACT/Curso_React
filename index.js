@@ -12,7 +12,9 @@ glob("ejemplos/**/package.json", {}, (err, files) => {
 
   const examples = [];
   files.forEach(f => {
-    examples.push(path.dirname(f).split('/').slice(-1).pop());
+    if (!f.includes('node_modules')) {
+      examples.push(path.dirname(f).split('/').slice(-1).pop());
+    }
   });
 
   inquirer.prompt([
