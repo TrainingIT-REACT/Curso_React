@@ -34,7 +34,7 @@ unsubscribe();
 // App
 const App = () => (
   <div className="App container">
-    <h1>3.5 404</h1>
+    <h1>4.2 Store</h1>
     <p>Abre la consola del navegador para ver los mensajes</p>
   </div>
 );
