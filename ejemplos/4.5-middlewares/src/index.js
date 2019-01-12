@@ -16,9 +16,9 @@ import UpdateName from './UpdateName';
 const App = () => (
   <Provider store={store}>
     <div className="App container">
-      <h1>4.4 React y Redux</h1>
+      <h1>4.5 Middlewares</h1>
       <UpdateName />
-      <AddTodo />
+      <AddTodo test="true"/>
       <TodosList />
     </div>
   </Provider>
