@@ -1,3 +1,4 @@
+// Importamos los tipos de acciones
 import types from '../actions/types';
 
 // Estado inicial
@@ -8,9 +9,12 @@ const initialState = {
 // Implementamos el reducer
 const reducer = (state = initialState, action) => {
   switch(action.type) {
+    // Agregar un TODO
     case types.ADD_TODO:
       return {
         list: [
+          // Hacemos uso del spread operator para expandir los elementos
+          // del array state.list
           ...state.list, {
             todo: action.todo,
             complete: false,
