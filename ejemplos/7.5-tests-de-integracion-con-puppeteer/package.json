@@ -1,0 +1,35 @@
+{
+  "name": "7.5-tests-de-integracion-con-puppeteer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:integration": "jest -c integration/jest.config.js",
+    "eject": "react-scripts eject",
+    "serve": "yarn build && serve -s build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest-enzyme": "^7.0.1",
+    "jest-puppeteer": "^3.8.0",
+    "puppeteer": "^1.11.0",
+    "serve": "^10.1.1"
+  }
+}

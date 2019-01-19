@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UncontrolledForm Render should add the correct HTML elements 1`] = `
+<form>
+  <label
+    for="lastName"
+  >
+    Last Name
+  </label>
+  <input
+    id="lastName"
+    type="text"
+    value="M"
+  />
+  <p>
+    Your last name is: 
+    <b
+      class="name"
+    >
+      M
+    </b>
+  </p>
+  <div>
+    <input
+      type="submit"
+      value="Submit"
+    />
+  </div>
+</form>
+`;
