@@ -54,7 +54,7 @@ class App extends React.Component {
 
   render() {
     return <div className="App container">
-      <h1>5.1 Llamadas con Fetch</h1>
+      <h1>7.3 Mocks</h1>
       <form onSubmit={this.onSubmit}>
         <div>
           <label htmlFor="title">Título</label>
