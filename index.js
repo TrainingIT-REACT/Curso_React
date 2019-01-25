@@ -32,7 +32,7 @@ glob("ejemplos/**/package.json", {}, (err, files) => {
       console.log(`Ejecutando el ejemplo ${package}`);
       console.log("----------------------------------------------------");
       cp.execFileSync(
-        "npx",
+        /^win/.test(process.platform) ? "npx.cmd" : "npx",
         [
           "lerna",
           "run",
