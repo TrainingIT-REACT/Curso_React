@@ -42,7 +42,7 @@ class App extends React.Component {
     return <Router>
       <UserContext.Provider value={this.state}>
         <div className="App container">
-          <h1>3.4 rutas privadas</h1>
+          <h1>8.5 Tree shaking</h1>
           <nav>
             <ul>
               <li><NavLink activeClassName="active" exact to="/">Inicio</NavLink></li>
