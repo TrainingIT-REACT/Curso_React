@@ -34,7 +34,6 @@ module.exports = {
     contentBase: './build',
     historyApiFallback: true
   },
-  devtool: 'source-map',
   optimization: {
     // Importamos todos los módulos desde un único runtime
     runtimeChunk: 'single',

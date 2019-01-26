@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "> 0.5%",
+            "last 2 versions",
+            "Firefox ESR",
+            "not dead"
+          ]
+        },
+        "useBuiltIns": "entry",
+        "debug": false
+      }
+    ]
+  ],
+  "plugins": ["@babel/plugin-syntax-dynamic-import"]
+}
