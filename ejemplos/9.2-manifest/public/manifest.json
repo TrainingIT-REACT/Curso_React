@@ -1,6 +1,10 @@
 {
-  "short_name": "Private routes",
-  "name": "Private!",
+  "name": "Rutas privadas",
+  "short_name": "Privado!",
+  "start_url": "./?utm_source=pwa",
+  "display": "standalone",
+  "theme_color": "#2c59fb",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "images/pwa/icon-72x72.png",
@@ -43,8 +47,14 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#2c59fb",
-  "background_color": "#ffffff"
+  "related_application": [
+    {
+      "platform": "web"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/XXXXX"
+    }
+  ]
+
 }
