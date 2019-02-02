@@ -45,8 +45,5 @@ self.addEventListener('fetch', function(event) {
 
 // Evento activate
 self.addEventListener('activate', function(e) {
-  console.log('activado');
-  // Informa al navegador que va a tomar el control
-  // del sitio web
-  return self.clients.claim();
+  console.log('activado!');
 });

@@ -14,9 +14,6 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 // Evento activate
 self.addEventListener('activate', (e) => {
   console.log('activado');
-  // Informa al navegador que va a tomar el control
-  // del sitio web
-  return self.clients.claim();
 });
 
 // Evento de mensajes
